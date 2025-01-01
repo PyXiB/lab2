@@ -33,3 +33,5 @@ def delete_contact(request, pk):
         contact.delete()
         return redirect('contact_list')
     return render(request, 'phonebook/contact_confirm_delete.html', {'contact': contact})
+
+
